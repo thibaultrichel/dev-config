@@ -23,12 +23,20 @@ CASE_SENSITIVE="true"
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+HIST_STAMPS="dd-mm-yyyy"
+
 # Plugins
 
 plugins=(
 git
+docker
 docker-compose
-terraform
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -50,15 +58,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 
-alias nanoconf="nano ~/.nanorc"
+alias ll="ls -alhF --sort=extension --group-directories-first"
+
 alias zshconf="nano ~/.zshrc"
 alias applyconf="source ~/.zshrc && source ~/.oh-my-zsh/themes/thibz.zsh-theme"
-alias zshtheme="nano ~/.oh-my-zsh/themes/thibz.zsh-theme"
-alias ll="ls -alF"
-alias jptenv="source ~/Desktop/JupyterLab/jptlab_env/bin/activate"
-alias devops_env="source ~/Desktop/DevOps/venv_devops/bin/activate"
-alias jptlab="cd ~/Desktop/ && jptenv && jupyter-lab"
-alias sshconnect="ssh -p 2222 thibault@172.23.129.80"
-alias python="python3"
+alias venv="source .venv/bin/activate"
 
 source $ZSH/themes/thibz.zsh-theme
