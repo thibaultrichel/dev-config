@@ -1,3 +1,6 @@
-# ZSH Config
+# Development environment config
 
-Config files for oh-my-zsh.
+## `oh-my-zsh` config
+
+* Custom `.zshrc` config file
+* Custom theme `thibz`
