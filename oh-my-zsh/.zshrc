@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 
-alias ll="ls -alhF --sort=extension --group-directories-first"
+alias ll="LC_COLLATE=C ls -AlhF --group-directories-first"
 
 alias zshconf="nano ~/.zshrc"
 alias applyconf="source ~/.zshrc && source ~/.oh-my-zsh/themes/thibz.zsh-theme"
