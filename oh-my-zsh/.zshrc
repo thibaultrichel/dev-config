@@ -75,3 +75,5 @@ alias applyconf="source ~/.zshrc && source ~/.oh-my-zsh/themes/thibz.zsh-theme"
 alias venv="source .venv/bin/activate"
 
 source $ZSH/themes/thibz.zsh-theme
+
+. "$HOME/.local/bin/env"
