@@ -10,7 +10,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/richel/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
 
@@ -46,7 +46,8 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -55,10 +56,19 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+# Dotted/hidden files in tab-completions
+
+setopt globdots
 
 # Aliases
 
-alias ll="LC_COLLATE=C gls -alhF --group-directories-first"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS - requires: brew install coreutils
+    alias ll='LC_COLLATE=C gls -alhF --color=auto --group-directories-first'
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # WSL / Linux - native GNU ls already supports these flags
+    alias ll='LC_COLLATE=C ls -alhF --color=auto --group-directories-first'
+fi
 
 alias zshconf="nano ~/.zshrc"
 alias applyconf="source ~/.zshrc && source ~/.oh-my-zsh/themes/thibz.zsh-theme"
