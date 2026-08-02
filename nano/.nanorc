@@ -7,3 +7,4 @@ set autoindent
 set tabstospaces
 set tabsize 4
 set constantshow
+set matchbrackets "(<[{)>]}"

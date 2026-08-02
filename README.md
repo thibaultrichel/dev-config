@@ -4,3 +4,7 @@
 
 * Custom `.zshrc` config file
 * Custom theme `thibz`
+
+## `nano` config
+
+* Custom `.nanorc` file
