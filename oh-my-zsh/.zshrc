@@ -10,7 +10,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/thibaultrichel/.oh-my-zsh"
+export ZSH="/Users/richel/.oh-my-zsh"
 
 # Theme
 
@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 
-alias ll="LC_COLLATE=C ls -AlhF --group-directories-first"
+alias ll="LC_COLLATE=C gls -alhF --group-directories-first"
 
 alias zshconf="nano ~/.zshrc"
 alias applyconf="source ~/.zshrc && source ~/.oh-my-zsh/themes/thibz.zsh-theme"
