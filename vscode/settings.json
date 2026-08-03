@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "workbench.settings.applyToAllProfiles": [
+        "files.exclude"
+    ],
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.iconTheme": "a-file-icon-vscode",
+    "editor.minimap.enabled": false
+}

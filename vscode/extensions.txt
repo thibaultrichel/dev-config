@@ -1,0 +1,7 @@
+anthropic.claude-code
+atommaterial.a-file-icon-vscode
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+zhuangtongfa.material-theme
